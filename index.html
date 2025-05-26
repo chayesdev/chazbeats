@@ -24,6 +24,7 @@
       			gap: 20px; /* space between GIF and audio player */
       			background: #D3D3D3; /* optional, background color */
     			}	
+
     		h1 {
       			font-family: 'Poetsen One', cursive;
       			font-size: 5rem;
@@ -32,14 +33,33 @@
       			user-select: none;
       			text-shadow: 2px 2px 6px rgba(0,0,0,0.2);
     			}
+
     		img {
-      			max-width: 300px; /* control GIF size */
       			height: auto;
       			display: block;
     			}
+
     		audio {
       			outline: none;
     			}
+
+    		.gif-container {
+    			display: flex;
+    			align-items: center;
+    			justify-content: center;
+    			gap: 20px;
+    		}
+
+    		.main-gif {
+    			max-width: 300px;
+    			height: auto;
+    		}
+
+    		.side-cat {
+    			max-width: 150px;
+    			height: auto;
+    		}
+
 	</style>
 </head>
 
@@ -47,7 +67,11 @@
 
 	<h1>givafuk tunes</h1>
 		  
-	<img src="cat.gif" alt="Cat Hugging" />
+	<div class="gif-container">
+		<img src="cat-left.png" alt="Cat Left Side" class="side-cat"/>
+		<img src="cat.gif" alt="Cat Hugging" class="main-gif"/>
+		<img src="cat-right.png" alt="Cat Right Side" class="side-cat"/>
+	</div>
 		  
 	<audio controls>
 		<source src="mixes/song.mp3" type="audio/mpeg">
@@ -55,6 +79,7 @@
 	</audio>
 </body>
 </html>
+
 
 
 
