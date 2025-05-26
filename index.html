@@ -7,9 +7,31 @@
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>chazbeats</title>
+	  <style>
+    		body {
+      			margin: 0;
+      			height: 100vh;
+      			display: flex;
+      			flex-direction: column;
+      			align-items: center;
+      			justify-content: center;
+      			gap: 20px; /* space between GIF and audio player */
+      			background: #D3D3D3; /* optional, background color */
+    			}	
+    		img {
+      			max-width: 300px; /* control GIF size */
+      			height: auto;
+      			display: block;
+    			}
+    		audio {
+      			outline: none;
+    			}
 </head>
 
 <body style="margin: 0; display: flex; align-items: center; justify-content: center; height: 100vh;">
+		  
+	<img src="cat.gif" alt="Cat Hugging" />
+		  
 	<audio controls>
 		<source src="mixes/song.mp3" type="audio/mpeg">
 		oh noez. try a different browser.
