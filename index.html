@@ -59,6 +59,49 @@
     			height: auto;
     		}
 
+		
+		.dropdown {
+ 			position: relative;
+  			display: inline-block;
+		}
+
+		.dropbtn {
+ 			background-color: #d4e0e8;
+  			color: #333;
+  			padding: 10px 20px;
+  			font-family: 'Quicksand', sans-serif;
+  			border: none;
+  			border-radius: 5px;
+  			cursor: pointer;
+		}
+
+		.dropdown-content {
+  			display: none;
+  			position: absolute;
+  			background-color: #f8f9fa;
+  			box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  			border-radius: 8px;
+  			padding: 10px;
+  			z-index: 1;
+		}
+
+		.dropdown-content ul {
+  			list-style-type: none;
+  			padding: 0;
+  			margin: 0;
+		}
+
+		.dropdown-content li {
+  			padding: 6px 0;
+  			font-family: 'Quicksand', sans-serif;
+  			color: #444;
+		}
+
+		/* Show on hover */
+		.dropdown:hover .dropdown-content {
+  			display: block;
+		}
+
 	</style>
 </head>
 
@@ -78,6 +121,19 @@
 		<source src="mixes/smallermix.mp3" type="audio/mpeg">
 		oh noez. try a different browser.
 	</audio>
+
+	<div class="dropdown">
+  		<button class="dropbtn">🎵 Show Songs</button>
+  		<div class="dropdown-content">
+    			<ul>
+      				<li>01. </li>
+      				<li>02. </li>
+      				<li>03. </li>
+      				<li>04. </li>
+      				<li>05. </li>
+    			</ul>
+  		</div>
+	</div>
 </body>
 </html>
 
